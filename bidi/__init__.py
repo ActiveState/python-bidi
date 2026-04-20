@@ -18,11 +18,14 @@
 # Copyright (C) 2010-2024 Meir kriheli <mkriheli@gmail.com>.
 #
 
-from .wrapper import get_base_level, get_display
+try:
+    from .wrapper import get_base_level, get_display
+except ImportError:
+    from .algorithm import get_base_level, get_display
 
 __all__ = ["get_base_level", "get_display"]
 
-VERSION_TUPLE = (0, 6, 7)
+VERSION_TUPLE = (0, 6, 8, 1)
 VERSION = ".".join(str(x) for x in VERSION_TUPLE)
 
 
