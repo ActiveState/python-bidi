@@ -25,7 +25,7 @@ except ImportError:
 
 __all__ = ["get_base_level", "get_display"]
 
-VERSION_TUPLE = (0, 6, 8, 1)
+VERSION_TUPLE = (0, 6, 8)
 VERSION = ".".join(str(x) for x in VERSION_TUPLE)
 
 
